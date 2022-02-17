@@ -182,7 +182,7 @@ for varN in WINFRAME:
 
     source = open(inFile, "r")
     wf = open(outFile, "w")
-    wf.write("contig\tstart\tend\tsize\tscore\n")
+    wf.write("#chr\tstart\tend\tsize\thom.score\n")
 
     for line in source:
         if line[0] == "#":
